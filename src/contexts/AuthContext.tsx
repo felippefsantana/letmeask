@@ -3,7 +3,7 @@ import { auth, firebase } from "../services/firebase";
 
 type AuthContextType = {
   user: User | undefined;
-  signInWithGoogle: () =>  Promise<void>;
+  signInWithGoogle: () => Promise<void>;
 }
 
 type User = {
@@ -12,13 +12,13 @@ type User = {
   avatar: string;
 }
 
-type AuthContexxtProviderProps = {
+type AuthContextProviderProps = {
   children: ReactNode;
 }
 
 export const AuthContext = createContext({} as AuthContextType);
 
-export function AuthContextProvider(props: AuthContexxtProviderProps) {
+export function AuthContextProvider(props: AuthContextProviderProps) {
   const [user, setUser] = useState<User>();
 
   useEffect(() => {
