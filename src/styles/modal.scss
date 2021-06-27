@@ -1,0 +1,64 @@
+.overlay {
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #FFF;
+  width: 100%;
+  max-width: 550px;
+  padding: 64px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  svg {
+    path {
+      stroke: #E73F5D;
+    }
+  }
+
+  strong {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #29292E;
+  }
+
+  span {
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #737380;
+  }
+
+  div {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+
+    :first-child {
+      background: #DBDCDD;
+      color: #737380;
+    }
+
+    :last-child {
+      background: #E73F5D;
+    }
+  }
+}
